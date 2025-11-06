@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		ksudoku
 Summary:	ksudoku
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	cdcf31729a9757d78680a20b364bf146
+# Source0-md5:	5589e3bc57c9cdb6b8c37cfd6bc13867
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -58,9 +58,9 @@ fill a grid so that each column, row as well as each square block on
 the game field contains only one instance of each symbol.
 
 %description -l pl.UTF-8
-KSudoku jest grą logiczną. Gracz musi wypełnić planszę, tak żeby
-każda kolumna, każdy wiersz i każdy kwadrat zawierał tylko jedno
-wystąpienie danego symbolu.
+KSudoku jest grą logiczną. Gracz musi wypełnić planszę, tak żeby każda
+kolumna, każdy wiersz i każdy kwadrat zawierał tylko jedno wystąpienie
+danego symbolu.
 
 %prep
 %setup -q -n %{kaname}-%{version}
